@@ -40,7 +40,6 @@ describe('entrypoint', () => {
     });
 
     const success = await entrypoint();
-
     expect(success).toBe(true);
     expect(Toolkit).toHaveBeenCalledTimes(1);
     expect(notifyIssueAuthor).toHaveBeenCalledTimes(1);
