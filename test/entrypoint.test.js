@@ -2,12 +2,12 @@
 jest.mock('bunyan');
 
 jest.mock('actions-toolkit');
-const { Toolkit } = require('actions-toolkit');
+const { Toolkit } = require('actions-toolkit'); 
 
 jest.mock('../lib/notify-issue-author');
-const notifyIssueAuthor = require('../lib/notify-issue-author');
+const notifyIssueAuthor = require('../lib/notify-issue-author');    
 
-const entrypoint = require('../entrypoint');
+const entrypoint = require('../entrypoint'); 
 
 describe('entrypoint', () => {
   afterEach(() => {
@@ -24,7 +24,7 @@ describe('entrypoint', () => {
 
     const success = await entrypoint();
 
-    expect(success).toBe(false);
+    expect(success).toBe(false); 
     expect(Toolkit).toHaveBeenCalledTimes(1);
     expect(notifyIssueAuthor).not.toHaveBeenCalled();
   });
