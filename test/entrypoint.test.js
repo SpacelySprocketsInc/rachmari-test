@@ -47,3 +47,4 @@ describe('entrypoint', () => {
     expect(notifyIssueAuthor).toHaveBeenNthCalledWith(1, tools);
   });
 });
+ 
