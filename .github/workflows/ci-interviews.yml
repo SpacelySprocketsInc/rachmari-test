@@ -31,7 +31,7 @@ jobs:
           MATRIX_CONTEXT: ${{ toJSON(matrix) }}
         run: echo "$MATRIX_CONTEXT"
   test:
-    if: ${{ github.repository != 'SpacelySprocketsInc/rachmari-test' || startsWith(github.ref, 'refs/heads/candidate-') }}
+    if: ${{ github.repository != 'SpacelySprocketsInc/rachmari-test' || startsWith(github.head_ref, 'refs/heads/candidate-') }}
     timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
