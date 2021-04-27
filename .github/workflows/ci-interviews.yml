@@ -1,6 +1,6 @@
 name: Interview
 
-on: [push, pull_request]
+on: push
 
 jobs:
   one:
