@@ -1,4 +1,4 @@
-name: Test
+name: Interview
 
 on: [push, pull_request]
 
