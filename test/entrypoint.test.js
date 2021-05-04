@@ -19,6 +19,7 @@ describe('entrypoint', () => {
     Toolkit.mockImplementation(() => {
       return {
         context: {}
+      
       };
     });
 
